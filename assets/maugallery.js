@@ -69,7 +69,7 @@ if (
 .first()
 .hasClass("row")
 ) {
-element.append('<div class="gallery-items-row row"></div>');
+element.append('<div class="gallery-items-row row justify-content-center"></div>');
 }
 },
 wrapItemInColumn(element, columns) {
