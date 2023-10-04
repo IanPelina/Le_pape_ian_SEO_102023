@@ -15,9 +15,10 @@
   <meta property="og:url" content="https://ianpelina.github.io/Le_pape_ian_SEO_102023/" />
   <meta property="og:site_name" content="Ninca Carducci" />
 
+  <link rel="preload" href="https://fonts.googleapis.com" as="style" onload="this.onload=null;this.rel='stylesheet'" media="google">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com" media="google"></noscript>
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/style.min.css" media="all">
-  <link rel="preconnect" href="https://fonts.googleapis.com" media="google">
   <link rel="preconnect" href="https://fonts.gstatic.com" media="gstatic" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
   
@@ -222,12 +223,9 @@
       <section id="banner">
         <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
-              class="active" aria-current="true"></button>
-            <button type="button" data-bs-target=#carouselExampleIndicators data-bs-slide-to=2
-              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target=#carouselExampleIndicators data-bs-slide-to=2 aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active carousel-item-start">
@@ -315,7 +313,7 @@
                 <img alt="image-aaron"
                   data-gallery-tag="Concert" class="gallery-item img-fluid"
                   src="assets/images/gallery/concerts/aaron-paul.webp"
-                  srcset="assets/images/2nd-gallery/concerts/aaron-paul.webp 240w, assets/images/gallery/concerts/aaron-paul.webp 500w"
+                  srcset="assets/images/re-size/2nd-gallery/concerts/aaron-paul.webp 240w, assets/images/gallery/concerts/aaron-paul.webp 500w"
                   sizes="(max-width: 769px) 240px, 500px" 
                   loading="lazy"
                 />
@@ -478,7 +476,7 @@
             <label for="nom">Nom</label>
             <input name="nom" id="nom">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" autocomplete="on">
             <label for="message">Message</label>
             <textarea name="message" id="message" cols=30 rows=10></textarea>
             <input type="submit" value="Envoyer">

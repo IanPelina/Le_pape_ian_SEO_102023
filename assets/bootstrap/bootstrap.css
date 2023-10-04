@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-:root {
-    /**--bs-blue: #0d6efd;
+/**:root {
+    --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -22,8 +22,8 @@
     --bs-gray-600: #6c757d;
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
-    --bs-gray-900: #212529;**/
-   /** --bs-primary: #0d6efd;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -51,8 +51,8 @@
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
-    --bs-body-bg: #fff;**/
-}
+    --bs-body-bg: #fff;
+}**/
 
 *,
 *::before,     
@@ -404,6 +404,7 @@ button,
 [type=reset],
 [type=submit] {
     -webkit-appearance: button;
+    appearance: "";
 }
 
 button:not(:disabled),
@@ -465,6 +466,7 @@ legend+* {
 [type=search] {
     outline-offset: -2px;
     -webkit-appearance: textfield;
+    appearance: "";
 }
 
 ::-webkit-search-decoration {
@@ -2595,7 +2597,7 @@ textarea.form-control-lg {
     -moz-appearance: none;
     appearance: none;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    print-color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
